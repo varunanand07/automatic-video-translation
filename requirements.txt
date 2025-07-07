@@ -1,0 +1,11 @@
+openai-whisper
+transformers
+googletrans==4.0.0-rc1
+jiwer
+sacrebleu
+nltk
+youtube_dl
+requests
+beautifulsoup4
+tqdm
+pandas
