@@ -42,7 +42,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             result = model.transcribe(audio_file)
             with open(transcript_file, "w", encoding="utf-8") as f:
                 f.write(result["text"])
-            print(f"Saved automatic transcript: {transcript_file}")
+            print(f"Saved automatically generated transcript: {transcript_file}")
 
         except Exception as e:
             print(f"Error on {url}: {e}")
