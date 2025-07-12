@@ -34,6 +34,8 @@ def vtt_to_txt(vtt_path, txt_path):
             text_lines.append(caption.text.strip())
         with open(txt_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(text_lines))
+    except Exception as e:
+        print(f"Error processing {vtt_path}: {e}")
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     for url in video_urls:
