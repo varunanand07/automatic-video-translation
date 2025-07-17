@@ -12,7 +12,8 @@ os.makedirs(reference_dir, exist_ok=True)
 video_urls = [
     "https://www.youtube.com/watch?v=-moW9jvvMr4&pp=ygUJdGVkIHRhbGtz",
     "https://www.youtube.com/watch?v=5MuIMqhT8DM&pp=ygUJdGVkIHRhbGtz0gcJCcEJAYcqIYzv",
-    "https://www.youtube.com/watch?v=PY9DcIMGxMs&pp=ygUJdGVkIHRhbGtz"
+    "https://www.youtube.com/watch?v=PY9DcIMGxMs&pp=ygUJdGVkIHRhbGtz",
+    "https://www.youtube.com/watch?v=BHY0FxzoKZE"
 ]
 
 metadata = []

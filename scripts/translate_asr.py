@@ -38,4 +38,4 @@ for fname in os.listdir(asr_dir):
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(". ".join(translated))
     
-    print(f"Translated {fname} → {output_path}")
+    print(f"Translated {fname}. Results saved to {output_path}")

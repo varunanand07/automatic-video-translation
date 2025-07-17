@@ -1,17 +1,18 @@
 import whisper
 import yt_dlp
 import os
+import json
 
 audio_dir = "data/audio"
 asr_dir = "data/asr_transcripts"
+metadata_path = "data/metadata.json"
 os.makedirs(audio_dir, exist_ok=True)
 os.makedirs(asr_dir, exist_ok=True)
 
-video_urls = [
-    "https://www.youtube.com/watch?v=-moW9jvvMr4&pp=ygUJdGVkIHRhbGtz",
-    "https://www.youtube.com/watch?v=5MuIMqhT8DM&pp=ygUJdGVkIHRhbGtz0gcJCcEJAYcqIYzv",
-    "https://www.youtube.com/watch?v=PY9DcIMGxMs&pp=ygUJdGVkIHRhbGtz"
-]
+with open(metadata_path, "r", encoding="utf-8") as f:
+    metadata = json.load(f)
+
+video_urls = [entry["url"] for entry in metadata if "url" in entry]
 
 model = whisper.load_model("base")
 
