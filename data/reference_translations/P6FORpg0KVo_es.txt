@@ -1,0 +1,465 @@
+Traductor: Sebastian Betti
+Revisor: Sebastian Sanchez
+Soy de Guatemala.
+Este es un anuncio de servicio público,
+allí está Guatemala.
+(Risas)
+No es ahí donde 
+mantienen a los prisioneros.
+Eso es Guantánamo.
+(Risas)
+No es el mismo lugar.
+Guatemala está justo debajo de México.
+Para estadounidenses
+que están entre el público,
+piénsenlo, se aplica 
+en la mayoría de los sentidos,
+ustedes estadounidenses,
+pueden pensar que 
+es el México de México.
+(Risas)
+Al igual que EE. UU. no quiere
+la inmigración ilegal desde México,
+México no quiere la inmigración
+ilegal desde Guatemala.
+Es un país más pequeño.
+Un país más pobre.
+Y bueno, qué puedo decir,
+tiene mucho mejor comida mexicana.
+(Risas)
+Guatemala es un país muy pobre.
+Y mucha gente habla de la educación
+como algo que brinda igualdad
+a las diferentes clases sociales.
+Pero siempre pensé que es lo opuesto.
+Algo que causa desigualdad.
+En la práctica,
+las personas con mucho dinero pueden
+comprarse una educación realmente buena
+y, por lo tanto,
+seguir teniendo mucho dinero.
+Mientras que quien
+no tiene mucho dinero,
+apenas aprende a leer y escribir
+y nunca gana mucho dinero.
+Es así particularmente
+en los países pobres.
+Ahora,
+tuve la suerte de haber recibido
+la educación de una persona rica
+a pesar de que no crecí rico.
+Y es porque soy hijo único.
+Y mi madre, madre soltera,
+gastó todos sus recursos
+en mi educación.
+Esto me permitió ir a
+la universidad en EE. UU.
+y obtener un doctorado
+en ciencias de la computación.
+Debido a todo esto, hace unos 10 años,
+decidí que quería hacer algo
+que ofreciera igualdad de acceso
+a la educación para todos.
+Por cierto, de esto quiero hablarles hoy,
+de igualdad de acceso
+a la educación para todos.
+En ese momento,
+era profesor de informática
+en la Universidad Carnegie Mellon
+y decidí trabajar en ello
+con mi estudiante de doctorado, Severin.
+Por la forma en que funciona mi cerebro,
+toda la educación es
+un problema demasiado general.
+Así que decidí empezar
+por enseñar una cosa.
+Y luego dije vale, 
+¿qué debemos enseñar primero?
+¿Matemáticas?
+A los dos nos encantan las matemáticas,
+a mi cofundador y a mí.
+Terminamos decidiendo no
+enseñar matemáticas.
+Luego pensamos. “quizá deberíamos
+enseñar informática”.
+Pero al final, y esto quizás sorprenda
+a la gente de Norteamérica,
+al final, decidimos que la
+mejor asignatura para empezar
+eran los idiomas extranjeros.
+Les diré por qué.
+Hay varias razones.
+Una de ellas es que
+tiene un público enorme.
+Hay 2000 millones de personas
+aprendiendo un idioma extranjero,
+dentro y fuera de las escuelas.
+La mayoría, por cierto,
+están aprendiendo inglés.
+Un 80% están aprendiendo inglés.
+En este extraño mapa,
+todos los países en verde
+son países en los que la mayoría
+de las personas aprenden inglés.
+Y la razón de ello
+es que el inglés puede 
+transformar tu vida.
+En la mayoría de los países
+saber inglés aumentará significativamente
+tu potencial de ingresos.
+Otra razón por la que decidimos
+empezar con idiomas extranjeros.
+Y es porque puedes
+ganar más dinero directamente
+si aprendes otro idioma,
+en particular inglés.
+Esto es muy diferente
+a muchas otras materias.
+Por ejemplo, las matemáticas.
+Solo saber matemáticas
+no aumenta tu potencial de ingresos
+porque, casi siempre,
+tienes que saber matemáticas
+para poder aprender física
+y poder ser ingeniero civil
+y así ganar más dinero.
+Mientras que
+con los idiomas, si eres
+camarero y aprendes inglés,
+puedes ser camarero en
+un hotel y ganar más dinero.
+Así que decidimos empezar 
+por la enseñanza de idiomas.
+También nos convencimos
+de que la única forma de
+llegar realmente a mucha gente
+era mediante el uso 
+de un teléfono móvil,
+o un smartphone en particular.
+Construir escuelas en todo el
+mundo es simplemente demasiado caro.
+Por otro lado,
+la mayoría de la población mundial
+ya tiene un smartphone,
+y la tendencia es que
+esa fracción solo vaya a aumentar.
+Por eso es que,
+decidimos en ese momento
+crear una forma de aprender idiomas
+extranjeros en un teléfono móvil
+que fuera accesible para todos.
+Y luego lo llamamos Duolingo.
+Gracias.
+(Aplausos)
+Ahora, para ser realmente accesibles
+para todos, ricos y pobres,
+Duolingo utiliza un modelo
+freemium como soporte.
+Lo que eso significa es que
+puedes aprender todo lo que quieras
+sin tener que pagar.
+Pero si no pagas,
+quizá tengas que ver
+un anuncio al final de la clase.
+Si no te gustan los anuncios,
+también puedes pagar para
+suscribirte y desactivarlos.
+Y resulta que la gran mayoría
+de los ingresos de Duolingo
+provienen de personas que pagan
+al suscribirse desactivando anuncios.
+¿Quiénes son ellos que pagan
+para desactivar anuncios?
+Por lo general personas acomodadas
+de países ricos como EE. UU. y Canadá.
+¿Quiénes no pagan por suscribirse?
+Por lo general, provienen de países más
+pobres como Brasil, Vietnam o Guatemala.
+Lo que me gusta de este modelo
+es que es una pequeña forma
+de redistribución de la riqueza
+porque básicamente estamos
+haciendo que los ricos
+paguen por la educación de todos.
+Así que eso me gusta.
+(Aplausos)
+Con los smartphones,
+podemos llegar a mucha gente
+e incluso conseguir que los
+ricos paguen por todo esto,
+lo cual es fantástico.
+Sin embargo,
+si intentas impartir educación
+con un teléfono inteligente,
+encontrarás un problema enorme.
+Los teléfonos inteligentes 
+vienen equipados
+con algunas de las drogas más adictivas
+que la humanidad haya diseñado jamás.
+TikTok, Instagram, juegos móviles.
+Impartir educación a través
+de un teléfono inteligente
+es como esperar que la
+gente se coma su brócoli,
+pero justo al lado, pones el postre
+más delicioso que se haya hecho.
+(Risas)
+Si quieres ofrecer
+educación a todo el mundo,
+no solo tienes
+que hacerla accesible,
+también tienes que hacer que
+la gente quiera aprender de verdad.
+Y con Duolingo lo hemos podido hacer.
+Y al más alto nivel, lo hemos logrado
+haciendo que el brócoli sepa a postre.
+Lo diré de otra forma.
+Lo que hemos hecho es
+utilizar las mismas técnicas
+psicológicas que utilizan aplicaciones
+como Instagram,
+TikTok o los juegos móviles
+para mantener el interés,
+para mantener a las personas interesadas
+por la educación.
+Les daré algunos ejemplos
+de estas técnicas.
+Una de las más poderosas
+es la noción de racha.
+Una racha es simplemente un contador
+que mide el número de días
+que has usado el producto
+de forma consecutiva.
+Tomas ese número,
+lo pones de forma muy
+destacada en tu producto
+y luego la gente vuelve todos los días.
+Y la razón por la que la gente
+vuelve todos los días es porque, bueno,
+si no regresan, ese número vuelve a cero
+y la gente no quiere perder su racha.
+Funciona.
+Ahora, por un lado,
+las rachas han sido
+criticadas por, por ejemplo,
+hacer que los adolescentes
+se vuelvan adictos a Snapchat.
+Pero en el caso de 
+una aplicación educativa,
+las rachas hacen que la gente
+vuelva a estudiar todos los días.
+Para que comprendan
+el poder de las rachas,
+en el caso de Duolingo,
+tenemos más de tres millones
+de usuarios activos diarios
+que tienen una racha superior a 365.
+(Aplausos)
+Eso significa que no se han perdido
+ni un solo día en el último año o más.
+Un dato curioso sobre las rachas.
+¿Qué país creen que tiene el promedio
+más largo de rachas en una
+aplicación educativa?
+Es Japón.
+Por supuesto.
+¿Las rachas más cortas de la historia?
+Latinoamérica, cariño.
+(Risas)
+Pero somos divertidos,
+oye, somos divertidos.
+(Risas)
+Otro mecanismo importante para
+que la gente vuelva a tu producto
+son las notificaciones.
+Las notificaciones pueden
+ser muy fraudulentas y molestas,
+pero en el caso de un producto educativo
+la gente quiere que se les
+recuerde que deben aprender.
+En Duolingo tenemos un sistema
+de IA muy sofisticado
+que elige cuándo enviar la notificación
+y qué decir en cada notificación
+para maximizar la probabilidad
+de que las personas regresen.
+Curiosamente,
+incluso después de 
+toda esta sofisticación,
+resulta que el algoritmo para elegir
+a qué hora enviar una notificación
+es bastante simple.
+¿Cuál es el mejor momento para
+enviar una notificación?
+Lo diré.
+A 24 horas de la última vez
+que usaron el producto.
+Hay una explicación sencilla.
+Si ayer estabas libre a las 3 de la tarde,
+quizás estés libre hoy
+a las 3 de la tarde.
+Esto descubrió una IA muy sofisticada,
+valorada en millones de dólares.
+(Risas)
+Es gracioso.
+Ahora, con las notificaciones,
+no deberías enviar spam.
+Con Duolingo no estamos enviando spam.
+Después de inactividad semanal,
+no habrá notificaciones.
+Si no usas Duolingo por siete días,
+no te enviaremos notificaciones.
+En algún momento se nos ocurrió,
+“si dejábamos de enviar
+notificaciones a la gente
+deberíamos avisarles”.
+Por eso, notificamos a la gente diciendo:
+“parece que estos
+recordatorios no funcionan
+Dejaremos de enviarlos por ahora”.
+¿Saben qué hace la gente cuando
+recibe esta notificación?
+¡Regresan!
+(Risas)
+Pasivo-agresivo.
+(Risas)
+Funciona para mi madre,
+funciona para Duolingo.
+(Risas y aplausos)
+Estas notificaciones pasivo-agresivas
+son muy buenas para
+hacer que regresesn
+porque sienten que nuestra 
+mascota, el búho verde,
+se ha dado por vencida 
+y, por lo tanto, regresan.
+Y hablando de nuestro búho verde,
+debido a que notificaciones
+provienen de nuestro búho verde
+y sabrán que es pasivo-agresivo
+y bastante insistente,
+esto ha dado lugar
+a muchos memes en Internet
+que se burlan de los esfuerzos
+que hará para que vuelvas
+a aprender un idioma.
+Esta es una de mis favoritas.
+Este es un meme, 
+es uno de mis favoritos.
+(Risas)
+Básicamente parece que olvidaste
+tus clases de español.
+Y luego hay una alerta de intrusos,
+presumiblemente el búho irrumpió en tu
+casa para que aprendieras el idioma.
+Duolingo ha entrado
+en el espíritu de la época.
+Y hay miles de memes, hay
+parodias de SNL al respecto.
+Y es que hemos conseguido que
+la gente quiera aprender un idioma
+utilizando las mismas técnicas
+que utilizan los juegos móviles y las
+redes sociales para atraer a la gente.
+Y este es un punto muy importante,
+permítanme decirlo.
+No creo que haya una manera 
+de hacer que una aplicación educativa
+sea tan atractiva como TikTok
+o Instagram o los juegos móviles.
+Pero la buena noticia es...
+por cierto, la razón por la que no lo creo
+es porque, en última instancia,
+hay que enseñarle algo a la gente.
+Y es difícil competir
+con gatos y celebridades.
+Pero la buena noticia es que
+no creo que tengas que hacerlo.
+Este es el tema.
+Cuando aprendes algo,
+le das sentido.
+Mientras que cuando pasas dos
+horas navegando por Instagram,
+muchas veces después sientes
+que has perdido el tiempo.
+Así que creo que no pasa
+nada si tu producto educativo
+es solo un 80 o 90%
+tan atractivo como TikTok,
+porque el otro 10 o 20%
+lo dará la motivación interna
+de las personas,
+aunque, por supuesto, 
+no mucho más que eso.
+Este es un punto clave.
+Si queremos que la gente
+haga algo significativo,
+puedes usar las mismas técnicas que
+usan aplicaciones como las redes sociales
+para lograr que la gente lo haga.
+Y aunque no seas tan atractivo
+como lo son esas aplicaciones,
+puedes conseguir que cientos de
+millones de personas usen tu producto.
+En el caso de Duolingo, por ejemplo,
+hay más personas que aprenden idiomas
+con Duolingo en EE. UU. que personas
+que aprenden idiomas
+en todos los centros de enseñanza
+secundaria de EE. UU. juntos.
+(Aplausos)
+Y esto es cierto en la
+mayoría de los países del mundo.
+Mi esperanza es que... sé que
+podemos hacerlo,
+como humanidad,
+podamos hacer como Duolingo
+ha hecho para aprender idiomas,
+pero también para
+las demás materias.
+Donde podamos hacer que la gente
+aprenda matemáticas con teléfonos móviles,
+o física o lo que sea.
+Espero un futuro en el que pasar tiempo
+frente a una pantalla no sea malo,
+que podamos ofrecer educación de
+alta calidad a todos, ricos o pobres,
+a través del móvil.
+Pero lo más importante con lo
+que puedo terminar esta charla
+es con un recordatorio de que,
+por favor, por favor, se los ruego,
+hagan sus clases de idiomas hoy.
+Muchísimas gracias.
+(Risas)
+Gracias.
+(Aplausos)
+Helen Walters: Luis, muchas gracias.
+Me pregunto si puedes decir un
+poco más sobre este último punto,
+¿cómo crees que puedes
+aplicar este tipo de pensamiento
+a otros temas?
+Mencionaste las matemáticas y cosas así.
+¿Cómo se hace eso?
+Luis von Ahn: En particular,
+las materias que se aprenden
+mediante la repetición
+y resulta que la mayoría
+de las cosas significativas
+se aprenden con miles de repeticiones.
+Se aprende a leer con repetición,
+matemáticas de primaria también.
+Muchas de las cosas
+aprendidas por repetición,
+puedes ludificarlas y convertirlas
+en algo como Duolingo,
+donde la gente lo usa por diversión.
+Es más difícil para las explicaciones.
+Eso requiere videos realmente buenos.
+Sal Khan lo hace muy bien.
+Pero para cosas que requieren
+mucha repetición,
+podemos usar el mismo método.
+Helen: muchas gracias por compartir.
+(Aplausos)
