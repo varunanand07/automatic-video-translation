@@ -2,9 +2,9 @@ import os
 from jiwer import wer
 import json
 
-original_dir = "data/original_transcripts"
-asr_dir = "data/asr_transcripts"
-metadata_path = "data/metadata.json"
+original_dir = "data/ted_talks/original_transcripts"
+asr_dir = "data/ted_talks/asr_transcripts"
+metadata_path = "data/ted_talks/metadata.json"
 
 with open(metadata_path, "r", encoding="utf-8") as f:
     metadata = json.load(f)
@@ -40,7 +40,7 @@ print("\nWord Error Rates:")
 for r in results:
     print(f"{r['title']} ({r['id']}): WER = {r['wer']}")
 
-with open("data/asr_evaluation.json", "w", encoding="utf-8") as f:
+with open("data/ted_talks/asr_evaluation.json", "w", encoding="utf-8") as f:
     json.dump(results, f, indent=2)
 
-print("\n Results saved to data/asr_evaluation.json")
+print("\n Results saved to data/ted_talks/asr_evaluation.json")

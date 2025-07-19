@@ -3,9 +3,9 @@ import yt_dlp
 import os
 import json
 
-audio_dir = "data/audio"
-asr_dir = "data/asr_transcripts"
-metadata_path = "data/metadata.json"
+audio_dir = "data/ted_talks/audio"
+asr_dir = "data/ted_talks/asr_transcripts"
+metadata_path = "data/ted_talks/metadata.json"
 os.makedirs(audio_dir, exist_ok=True)
 os.makedirs(asr_dir, exist_ok=True)
 

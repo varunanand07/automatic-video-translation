@@ -1,8 +1,8 @@
 import os
 from transformers import MarianMTModel, MarianTokenizer
 
-asr_dir = "data/asr_transcripts"
-translation_dir = "data/translations"
+asr_dir = "data/ted_talks/asr_transcripts"
+translation_dir = "data/ted_talks/translations"
 os.makedirs(translation_dir, exist_ok=True)
 
 model_name = "Helsinki-NLP/opus-mt-en-es"

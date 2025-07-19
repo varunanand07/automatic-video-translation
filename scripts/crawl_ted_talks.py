@@ -5,9 +5,9 @@ import webvtt
 import time
 import random
 
-transcript_dir = "data/original_transcripts"
-reference_dir = "data/reference_translations"
-metadata_file = "data/metadata.json"
+transcript_dir = "data/ted_talks/original_transcripts"
+reference_dir = "data/ted_talks/reference_translations"
+metadata_file = "data/ted_talks/metadata.json"
 os.makedirs(transcript_dir, exist_ok=True)
 os.makedirs(reference_dir, exist_ok=True)
 
@@ -32,7 +32,7 @@ ydl_opts = {
     'writeautomaticsub': True,
     'subtitleslangs': ['en', 'es'],
     'subtitlesformat': 'vtt',
-    'outtmpl': 'data/original_transcripts/%(id)s.%(ext)s',
+    'outtmpl': 'data/ted_talks/original_transcripts/%(id)s.%(ext)s',
     'quiet': True,
     'retries': 3,
     'fragment_retries': 3,
@@ -84,8 +84,8 @@ for i, url in enumerate(video_urls):
             video_id = info['id']
             print(f"Video ID: {video_id}")
 
-            vtt_file_en = f"data/original_transcripts/{video_id}.en.vtt"
-            txt_file_en = f"data/original_transcripts/{video_id}.txt"
+            vtt_file_en = f"data/ted_talks/original_transcripts/{video_id}.en.vtt"
+            txt_file_en = f"data/ted_talks/original_transcripts/{video_id}.txt"
             if os.path.exists(vtt_file_en):
                 print(f"Converting English VTT to TXT for {video_id}")
                 vtt_to_txt(vtt_file_en, txt_file_en)
@@ -93,8 +93,8 @@ for i, url in enumerate(video_urls):
             else:
                 print(f"No English captions found for {video_id}")
 
-            vtt_file_es = f"data/original_transcripts/{video_id}.es.vtt"
-            txt_file_es = f"data/reference_translations/{video_id}_es.txt"
+            vtt_file_es = f"data/ted_talks/original_transcripts/{video_id}.es.vtt"
+            txt_file_es = f"data/ted_talks/reference_translations/{video_id}_es.txt"
             if os.path.exists(vtt_file_es):
                 print(f"Converting Spanish VTT to TXT for {video_id}")
                 vtt_to_txt(vtt_file_es, txt_file_es)

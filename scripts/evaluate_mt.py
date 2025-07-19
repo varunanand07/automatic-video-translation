@@ -2,9 +2,9 @@ import os
 import sacrebleu
 import json
 
-translation_dir = "data/translations"
-reference_dir = "data/reference_translations"
-results_path = "data/mt_evaluation.json"
+translation_dir = "data/ted_talks/translations"
+reference_dir = "data/ted_talks/reference_translations"
+results_path = "data/ted_talks/mt_evaluation.json"
 
 results = []
 
