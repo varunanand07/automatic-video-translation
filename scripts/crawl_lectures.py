@@ -8,10 +8,8 @@ import random
 dataset_name = "lectures"
 base_dir = f"data/{dataset_name}"
 transcript_dir = f"{base_dir}/original_transcripts"
-reference_dir = f"{base_dir}/reference_translations"
 metadata_file = f"{base_dir}/metadata.json"
 os.makedirs(transcript_dir, exist_ok=True)
-os.makedirs(reference_dir, exist_ok=True)
 
 video_urls = [
     "https://www.youtube.com/watch?v=dxxEJbxuJOE", 
@@ -26,7 +24,7 @@ ydl_opts = {
     'skip_download': True,
     'writesubtitles': True,
     'writeautomaticsub': True,
-    'subtitleslangs': ['en', 'es'],
+    'subtitleslangs': ['en'],
     'subtitlesformat': 'vtt',
     'outtmpl': f'{transcript_dir}/%(id)s.%(ext)s',
     'quiet': True
@@ -34,7 +32,12 @@ ydl_opts = {
 
 def vtt_to_txt(vtt_path, txt_path):
     try:
-        lines = [caption.text.strip() for caption in webvtt.read(vtt_path)]
+        lines = []
+        for caption in webvtt.read(vtt_path):
+            for line in caption.text.split('\n'):
+                line = line.strip()
+                if line:
+                    lines.append(line)
         with open(txt_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
     except Exception as e:
@@ -59,30 +62,27 @@ for i, url in enumerate(video_urls):
         print(f"\nProcessing lecture {i+1}/{len(video_urls)}: {url}")
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = download_with_retry(ydl, url)
-            if not info: continue
-
+            if not info:
+                continue
             video_id = info['id']
-
             vtt_en = f"{transcript_dir}/{video_id}.en.vtt"
             txt_en = f"{transcript_dir}/{video_id}.txt"
+            transcript_found = False
             if os.path.exists(vtt_en):
                 vtt_to_txt(vtt_en, txt_en)
                 os.remove(vtt_en)
-
-            vtt_es = f"{transcript_dir}/{video_id}.es.vtt"
-            txt_es = f"{reference_dir}/{video_id}_es.txt"
-            if os.path.exists(vtt_es):
-                vtt_to_txt(vtt_es, txt_es)
-                os.remove(vtt_es)
-
-            metadata.append({
-                'id': video_id,
-                'title': info.get('title'),
-                'url': url,
-                'duration': info.get('duration'),
-                'subtitles_available': os.path.exists(txt_en)
-            })
-
+                transcript_found = True
+                print(f"Transcript saved for {video_id}")
+            else:
+                print(f"No English transcript found for {video_id}")
+            if transcript_found:
+                metadata.append({
+                    'id': video_id,
+                    'title': info.get('title'),
+                    'url': url,
+                    'duration': info.get('duration'),
+                    'transcript_available': True
+                })
     except Exception as e:
         print(f"Error on {url}: {e}")
         continue
