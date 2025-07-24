@@ -1,0 +1,18 @@
+[
+  {
+    "id": "dxxEJbxuJOE",
+    "bertscore_f1": 0.7767
+  },
+  {
+    "id": "Ps8jOj7diA0",
+    "bertscore_f1": 0.7531
+  },
+  {
+    "id": "1Pzk-UqilW4",
+    "bertscore_f1": 0.7655
+  },
+  {
+    "id": "oKtWYe9DxDo",
+    "bertscore_f1": 0.5059
+  }
+]
