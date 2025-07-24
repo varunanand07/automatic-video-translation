@@ -1,40 +1,51 @@
 import os
 import sacrebleu
 import json
+import argparse
 
-translation_dir = "data/ted_talks/translations"
-reference_dir = "data/ted_talks/reference_translations"
-results_path = "data/ted_talks/mt_evaluation.json"
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, default='ted_talks')
+    args = parser.parse_args()
 
-results = []
+    base = f"data/{args.dataset}"
+    translation_dir = f"{base}/translations"
+    reference_dir = f"{base}/reference_translations"
+    results_path = f"{base}/mt_evaluation.json"
+    metadata_path = f"{base}/metadata.json"
 
-for fname in os.listdir(translation_dir):
-    if not fname.endswith("_es.txt"):
-        continue
+    with open(metadata_path, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
 
-    video_id = fname.replace("_es.txt", "")
-    translation_path = os.path.join(translation_dir, fname)
-    reference_path = os.path.join(reference_dir, f"{video_id}_es.txt")
+    results = []
+    total = 0
+    evaluated = 0
+    for item in metadata:
+        video_id = item["id"]
+        translation_path = os.path.join(translation_dir, f"{video_id}_es.txt")
+        reference_path = os.path.join(reference_dir, f"{video_id}_es.txt")
+        total += 1
+        if not os.path.exists(translation_path):
+            print(f"No system translation for {video_id}, skipping")
+            continue
+        if not os.path.exists(reference_path):
+            print(f"No reference translation for {video_id}, skipping")
+            continue
+        with open(translation_path, "r", encoding="utf-8") as f:
+            system_translation = f.read().strip()
+        with open(reference_path, "r", encoding="utf-8") as f:
+            reference_translation = f.read().strip()
+        bleu = sacrebleu.corpus_bleu([system_translation], [[reference_translation]])
+        results.append({
+            "id": video_id,
+            "bleu_score": round(bleu.score, 2)
+        })
+        evaluated += 1
+        print(f"BLEU score for {video_id}: {bleu.score:.2f}")
 
-    if not os.path.exists(reference_path):
-        print(f"No reference translation for {video_id}, this video will be skipped")
-        continue
+    with open(results_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
+    print(f"\nEvaluated {evaluated}/{total} items. Results saved to {results_path}")
 
-    with open(translation_path, "r", encoding="utf-8") as f:
-        system_translation = f.read().strip()
-
-    with open(reference_path, "r", encoding="utf-8") as f:
-        reference_translation = f.read().strip()
-
-    bleu = sacrebleu.corpus_bleu([system_translation], [[reference_translation]])
-    
-    results.append({
-        "id": video_id,
-        "bleu_score": round(bleu.score, 2)
-    })
-    print(f"BLEU score for {video_id}: {bleu.score:.2f}")
-
-with open(results_path, "w", encoding="utf-8") as f:
-    json.dump(results, f, indent=2)
-
-print("\n Evaluation complete. Results saved to:", results_path)
+if __name__ == '__main__':
+    main()

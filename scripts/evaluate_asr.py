@@ -1,46 +1,51 @@
 import os
-from jiwer import wer
 import json
+import argparse
+from jiwer import wer
 
-original_dir = "data/ted_talks/original_transcripts"
-asr_dir = "data/ted_talks/asr_transcripts"
-metadata_path = "data/ted_talks/metadata.json"
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, default='ted_talks')
+    args = parser.parse_args()
 
-with open(metadata_path, "r", encoding="utf-8") as f:
-    metadata = json.load(f)
+    base = f"data/{args.dataset}"
+    original_dir = f"{base}/original_transcripts"
+    asr_dir = f"{base}/asr_transcripts"
+    metadata_path = f"{base}/metadata.json"
+    output_path = f"{base}/asr_evaluation.json"
 
-results = []
+    with open(metadata_path, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
 
-for item in metadata:
-    video_id = item["id"]
-    original_file = f"{original_dir}/{video_id}.txt"
-    asr_file = f"{asr_dir}/{video_id}.txt"
+    results = []
+    total = 0
+    evaluated = 0
+    for item in metadata:
+        video_id = item["id"]
+        original_file = f"{original_dir}/{video_id}.txt"
+        asr_file = f"{asr_dir}/{video_id}.txt"
+        total += 1
+        if not os.path.exists(original_file):
+            print(f"Original transcript not found for {video_id}")
+            continue
+        if not os.path.exists(asr_file):
+            print(f"ASR transcript not found for {video_id}")
+            continue
+        with open(original_file, "r", encoding="utf-8") as f:
+            reference = f.read()
+        with open(asr_file, "r", encoding="utf-8") as f:
+            hypothesis = f.read()
+        error = wer(reference, hypothesis)
+        results.append({
+            "id": video_id,
+            "title": item.get("title", ""),
+            "wer": round(error, 3)
+        })
+        evaluated += 1
 
-    if not os.path.exists(original_file):
-        print(f"Original transcript not found for {video_id}")
-        continue
-    if not os.path.exists(asr_file):
-        print(f"ASR transcript not found for {video_id}")
-        continue
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
+    print(f"\nEvaluated {evaluated}/{total} items. Results saved to {output_path}")
 
-    with open(original_file, "r", encoding="utf-8") as f:
-        reference = f.read()
-    with open(asr_file, "r", encoding="utf-8") as f:
-        hypothesis = f.read()
-
-    error = wer(reference, hypothesis)
-
-    results.append({
-        "id": video_id,
-        "title": item.get("title", ""),
-        "wer": round(error, 3)
-    })
-
-print("\nWord Error Rates:")
-for r in results:
-    print(f"{r['title']} ({r['id']}): WER = {r['wer']}")
-
-with open("data/ted_talks/asr_evaluation.json", "w", encoding="utf-8") as f:
-    json.dump(results, f, indent=2)
-
-print("\n Results saved to data/ted_talks/asr_evaluation.json")
+if __name__ == '__main__':
+    main()
