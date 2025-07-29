@@ -8,7 +8,7 @@ def main():
     args = parser.parse_args()
 
     base = f"data/{args.dataset}"
-    asr_dir = f"{base}/asr_transcripts"
+    asr_dir = f"{base}/asr_transcripts/whisper"
     translation_dir = f"{base}/translations"
     os.makedirs(translation_dir, exist_ok=True)
 

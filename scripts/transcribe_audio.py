@@ -11,7 +11,7 @@ def main():
 
     base = f"data/{args.dataset}"
     audio_dir = f"{base}/audio"
-    asr_dir = f"{base}/asr_transcripts"
+    asr_dir = f"{base}/asr_transcripts/whisper"
     original_dir = f"{base}/original_transcripts"
     metadata_path = f"{base}/metadata.json"
     os.makedirs(audio_dir, exist_ok=True)

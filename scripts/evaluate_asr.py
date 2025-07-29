@@ -10,7 +10,7 @@ def main():
 
     base = f"data/{args.dataset}"
     original_dir = f"{base}/original_transcripts"
-    asr_dir = f"{base}/asr_transcripts"
+    asr_dir = f"{base}/asr_transcripts/whisper"
     metadata_path = f"{base}/metadata.json"
     output_path = f"{base}/asr_evaluation.json"
 
