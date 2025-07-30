@@ -5,11 +5,13 @@ from transformers import MarianMTModel, MarianTokenizer
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='ted_talks')
+    parser.add_argument('--asr-model', type=str, default='whisper')
+    parser.add_argument('--mt-model', type=str, default='marian')
     args = parser.parse_args()
 
     base = f"data/{args.dataset}"
-    asr_dir = f"{base}/asr_transcripts/whisper"
-    translation_dir = f"{base}/translations"
+    asr_dir = f"{base}/asr_transcripts/{args.asr_model}"
+    translation_dir = f"{base}/translations/{args.mt_model}"
     os.makedirs(translation_dir, exist_ok=True)
 
     model_name = "Helsinki-NLP/opus-mt-en-es"
@@ -41,7 +43,7 @@ def main():
             f.write(". ".join(translated))
         print(f"Translated {fname}. Results saved to {output_path}")
         processed += 1
-    print(f"\nTranslated {processed} files.")
+    print(f"\nTranslated {processed} files using {args.mt_model} model.")
 
 if __name__ == '__main__':
     main()

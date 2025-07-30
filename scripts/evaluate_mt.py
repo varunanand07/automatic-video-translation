@@ -5,11 +5,32 @@ import sacrebleu
 from transformers import MarianMTModel, MarianTokenizer
 from bert_score import score
 
-def compute_bleu(dataset, metadata):
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, default='ted_talks')
+    parser.add_argument('--asr-model', type=str, default='whisper')
+    parser.add_argument('--mt-model', type=str, default='marian')
+    args = parser.parse_args()
+
+    base = f"data/{args.dataset}"
+    metadata_path = os.path.join(base, "metadata.json")
+    reference_dir = os.path.join(base, "reference_translations")
+
+    with open(metadata_path, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
+
+    if os.path.exists(reference_dir) and len(os.listdir(reference_dir)) > 0:
+        print(f"Reference translations found so BLEU will be used for evaluation of {args.mt_model} model.")
+        compute_bleu(args.dataset, args.mt_model, metadata)
+    else:
+        print(f"No reference translations so back-translation + BERTScore will be used for evaluation of {args.mt_model} model.")
+        compute_bertscore_backtranslation(args.dataset, args.asr_model, args.mt_model, metadata)
+        
+def compute_bleu(dataset, mt_model, metadata):
     base = f"data/{dataset}"
-    translation_dir = f"{base}/translations"
+    translation_dir = f"{base}/translations/{mt_model}"
     reference_dir = f"{base}/reference_translations"
-    results_path = f"{base}/mt_evaluation.json"
+    results_path = f"{base}/mt_evaluation_{mt_model}.json"
 
     results = []
     total = 0
@@ -39,12 +60,12 @@ def compute_bleu(dataset, metadata):
         json.dump(results, f, indent=2)
     print(f"\nEvaluated {evaluated}/{total} with BLEU. Results saved to {results_path}")
 
-def compute_bertscore_backtranslation(dataset, metadata):
+def compute_bertscore_backtranslation(dataset, asr_model, mt_model, metadata):
     base = f"data/{dataset}"
-    asr_dir = os.path.join(base, "original_transcripts")
-    mt_dir = os.path.join(base, "translations")
-    bt_dir = os.path.join(base, "back_translations")
-    output_file = os.path.join(base, "bertscore.json")
+    asr_dir = os.path.join(base, f"asr_transcripts/{asr_model}")
+    mt_dir = os.path.join(base, f"translations/{mt_model}")
+    bt_dir = os.path.join(base, f"back_translations/{mt_model}")
+    output_file = os.path.join(base, f"bertscore_{asr_model}_{mt_model}.json")
 
     os.makedirs(bt_dir, exist_ok=True)
 
@@ -105,6 +126,8 @@ def compute_bertscore_backtranslation(dataset, metadata):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='ted_talks')
+    parser.add_argument('--asr-model', type=str, default='whisper')
+    parser.add_argument('--mt-model', type=str, default='marian')
     args = parser.parse_args()
 
     base = f"data/{args.dataset}"
@@ -115,11 +138,11 @@ def main():
         metadata = json.load(f)
 
     if os.path.exists(reference_dir) and len(os.listdir(reference_dir)) > 0:
-        print("Reference translations found so BLEU will be used for evaluation.")
-        compute_bleu(args.dataset, metadata)
+        print(f"Reference translations found so BLEU will be used for evaluation of {args.mt_model} model.")
+        compute_bleu(args.dataset, args.mt_model, metadata)
     else:
-        print("No reference translations so back-translation + BERTScore will be used for evaluation.")
-        compute_bertscore_backtranslation(args.dataset, metadata)
+        print(f"No reference translations so back-translation + BERTScore will be used for evaluation of {args.mt_model} model.")
+        compute_bertscore_backtranslation(args.dataset, args.asr_model, args.mt_model, metadata)
 
 if __name__ == '__main__':
     main()
