@@ -2,51 +2,91 @@
   {
     "id": "-moW9jvvMr4",
     "title": "A Simple Way to Break a Bad Habit | Judson Brewer | TED",
-    "wer": 0.161
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.161,
+      "assemblyai": 0.155
+    }
   },
   {
     "id": "5MuIMqhT8DM",
     "title": "Sleep Is Your Superpower | Matt Walker | TED",
-    "wer": 0.154
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.154,
+      "assemblyai": 0.14
+    }
   },
   {
     "id": "PY9DcIMGxMs",
     "title": "Everything you think you know about addiction is wrong | Johann Hari | TED",
-    "wer": 0.216
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.216,
+      "assemblyai": 0.212
+    }
   },
   {
     "id": "BHY0FxzoKZE",
     "title": "Wendy Suzuki: The brain-changing benefits of exercise | TED",
-    "wer": 0.214
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.214,
+      "assemblyai": 0.219
+    }
   },
   {
     "id": "6Af6b_wyiwI",
     "title": "The next outbreak? We\u2019re not ready | Bill Gates | TED",
-    "wer": 0.236
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.236,
+      "assemblyai": 0.146
+    }
   },
   {
     "id": "P6FORpg0KVo",
     "title": "How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED",
-    "wer": 0.178
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.178,
+      "assemblyai": 0.17
+    }
   },
   {
     "id": "4TMPXK9tw5U",
     "title": "The Battle for Your Time: Exposing the Costs of Social Media | Dino Ambrosi | TEDxLagunaBlancaSchool",
-    "wer": 0.132
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.132,
+      "assemblyai": 0.11
+    }
   },
   {
     "id": "LBvHI1awWaI",
     "title": "Why comfort will ruin your life | Bill Eckstrom | TEDxUniversityofNevada",
-    "wer": 0.235
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.235,
+      "assemblyai": 0.211
+    }
   },
   {
     "id": "LnJwH_PZXnM",
     "title": "How not to take things personally? | Frederik Imbo | TEDxMechelen",
-    "wer": 0.259
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.259,
+      "assemblyai": 0.248
+    }
   },
   {
     "id": "MdZAMSyn_As",
     "title": "The Skill of Humor | Andrew Tarvin | TEDxTAMU",
-    "wer": 0.307
+    "model": "whisper",
+    "wer": {
+      "whisper": 0.307,
+      "assemblyai": 0.294
+    }
   }
 ]
