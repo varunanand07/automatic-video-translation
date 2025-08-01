@@ -1,0 +1,53 @@
+{
+  "marian": [
+    {
+      "id": "ErpdSOfPa-Q",
+      "title": "DON'T MAKE THESE MISTAKES IN LONDON \u274c\ud83d\ude2d",
+      "bleu_score": 53.73
+    },
+    {
+      "id": "aV_JLvSj550",
+      "title": "Katz\u2019s Deli Review\u2026after a few",
+      "bleu_score": 58.4
+    },
+    {
+      "id": "MTkQA9aHJHk",
+      "title": "I had to \ud83d\ude02\ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17",
+      "bleu_score": 17.04
+    }
+  ],
+  "mbart": [
+    {
+      "id": "ErpdSOfPa-Q",
+      "title": "DON'T MAKE THESE MISTAKES IN LONDON \u274c\ud83d\ude2d",
+      "bleu_score": 26.99
+    },
+    {
+      "id": "aV_JLvSj550",
+      "title": "Katz\u2019s Deli Review\u2026after a few",
+      "bleu_score": 10.0
+    },
+    {
+      "id": "MTkQA9aHJHk",
+      "title": "I had to \ud83d\ude02\ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17",
+      "bleu_score": 10.05
+    }
+  ],
+  "nllb": [
+    {
+      "id": "ErpdSOfPa-Q",
+      "title": "DON'T MAKE THESE MISTAKES IN LONDON \u274c\ud83d\ude2d",
+      "bleu_score": 50.72
+    },
+    {
+      "id": "aV_JLvSj550",
+      "title": "Katz\u2019s Deli Review\u2026after a few",
+      "bleu_score": 50.82
+    },
+    {
+      "id": "MTkQA9aHJHk",
+      "title": "I had to \ud83d\ude02\ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17",
+      "bleu_score": 0.98
+    }
+  ]
+}
