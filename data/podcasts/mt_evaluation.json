@@ -3,51 +3,69 @@
     {
       "id": "oS9ajaVNqkw",
       "title": "The Music Industry\u2019s Engine Behind #1 Hits - Rick Beato",
-      "bleu_score": 67.11
+      "bleu_score": 67.11,
+      "chrf_score": 80.9,
+      "ter_score": 36.07
     },
     {
       "id": "Q4xQdgcxGns",
       "title": "The Northern Lights - what are they? - What in the World podcast, BBC World Service",
-      "bleu_score": 63.86
+      "bleu_score": 63.86,
+      "chrf_score": 80.56,
+      "ter_score": 37.04
     },
     {
       "id": "5vK8LEgznBQ",
       "title": "Superheros | The Always Sunny Podcast Clips",
-      "bleu_score": 56.51
+      "bleu_score": 56.51,
+      "chrf_score": 70.41,
+      "ter_score": 51.17
     }
   ],
   "mbart": [
     {
       "id": "oS9ajaVNqkw",
       "title": "The Music Industry\u2019s Engine Behind #1 Hits - Rick Beato",
-      "bleu_score": 29.22
+      "bleu_score": 29.22,
+      "chrf_score": 64.39,
+      "ter_score": 147.62
     },
     {
       "id": "Q4xQdgcxGns",
       "title": "The Northern Lights - what are they? - What in the World podcast, BBC World Service",
-      "bleu_score": 27.74
+      "bleu_score": 27.74,
+      "chrf_score": 63.5,
+      "ter_score": 165.22
     },
     {
       "id": "5vK8LEgznBQ",
       "title": "Superheros | The Always Sunny Podcast Clips",
-      "bleu_score": 13.56
+      "bleu_score": 13.56,
+      "chrf_score": 43.32,
+      "ter_score": 316.42
     }
   ],
   "nllb": [
     {
       "id": "oS9ajaVNqkw",
       "title": "The Music Industry\u2019s Engine Behind #1 Hits - Rick Beato",
-      "bleu_score": 65.89
+      "bleu_score": 65.89,
+      "chrf_score": 79.99,
+      "ter_score": 49.64
     },
     {
       "id": "Q4xQdgcxGns",
       "title": "The Northern Lights - what are they? - What in the World podcast, BBC World Service",
-      "bleu_score": 62.26
+      "bleu_score": 62.26,
+      "chrf_score": 78.49,
+      "ter_score": 45.95
     },
     {
       "id": "5vK8LEgznBQ",
       "title": "Superheros | The Always Sunny Podcast Clips",
-      "bleu_score": 51.72
+      "bleu_score": 51.72,
+      "chrf_score": 67.09,
+      "ter_score": 72.58
     }
   ]
 }

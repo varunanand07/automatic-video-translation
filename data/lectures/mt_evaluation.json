@@ -3,66 +3,90 @@
     {
       "id": "dxxEJbxuJOE",
       "title": "Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet",
-      "bleu_score": 68.49
+      "bleu_score": 68.49,
+      "chrf_score": 83.7,
+      "ter_score": 31.78
     },
     {
       "id": "Ps8jOj7diA0",
       "title": "Lecture 1 | Programming Paradigms (Stanford)",
-      "bleu_score": 65.28
+      "bleu_score": 65.28,
+      "chrf_score": 82.49,
+      "ter_score": 46.17
     },
     {
       "id": "1Pzk-UqilW4",
       "title": "Lecture 4.1: Inheritance and Genetics  \u2014 Genes to Proteins",
-      "bleu_score": 66.46
+      "bleu_score": 66.46,
+      "chrf_score": 82.71,
+      "ter_score": 31.98
     },
     {
       "id": "oKtWYe9DxDo",
       "title": "Pandemic Lectures: Gathering the Facts | London Business School",
-      "bleu_score": 68.96
+      "bleu_score": 68.96,
+      "chrf_score": 83.78,
+      "ter_score": 30.57
     }
   ],
   "mbart": [
     {
       "id": "dxxEJbxuJOE",
       "title": "Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet",
-      "bleu_score": 44.72
+      "bleu_score": 44.72,
+      "chrf_score": 74.33,
+      "ter_score": 88.74
     },
     {
       "id": "Ps8jOj7diA0",
       "title": "Lecture 1 | Programming Paradigms (Stanford)",
-      "bleu_score": 40.59
+      "bleu_score": 40.59,
+      "chrf_score": 71.06,
+      "ter_score": 108.93
     },
     {
       "id": "1Pzk-UqilW4",
       "title": "Lecture 4.1: Inheritance and Genetics  \u2014 Genes to Proteins",
-      "bleu_score": 39.39
+      "bleu_score": 39.39,
+      "chrf_score": 71.7,
+      "ter_score": 82.72
     },
     {
       "id": "oKtWYe9DxDo",
       "title": "Pandemic Lectures: Gathering the Facts | London Business School",
-      "bleu_score": 29.85
+      "bleu_score": 29.85,
+      "chrf_score": 65.28,
+      "ter_score": 146.18
     }
   ],
   "nllb": [
     {
       "id": "dxxEJbxuJOE",
       "title": "Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet",
-      "bleu_score": 68.84
+      "bleu_score": 68.84,
+      "chrf_score": 82.74,
+      "ter_score": 31.78
     },
     {
       "id": "Ps8jOj7diA0",
       "title": "Lecture 1 | Programming Paradigms (Stanford)",
-      "bleu_score": 62.66
+      "bleu_score": 62.66,
+      "chrf_score": 80.58,
+      "ter_score": 57.51
     },
     {
       "id": "1Pzk-UqilW4",
       "title": "Lecture 4.1: Inheritance and Genetics  \u2014 Genes to Proteins",
-      "bleu_score": 67.26
+      "bleu_score": 67.26,
+      "chrf_score": 81.45,
+      "ter_score": 42.1
     },
     {
       "id": "oKtWYe9DxDo",
       "title": "Pandemic Lectures: Gathering the Facts | London Business School",
-      "bleu_score": 68.22
+      "bleu_score": 68.22,
+      "chrf_score": 83.1,
+      "ter_score": 31.46
     }
   ]
 }

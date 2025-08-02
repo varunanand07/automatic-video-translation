@@ -3,156 +3,216 @@
     {
       "id": "-moW9jvvMr4",
       "title": "A Simple Way to Break a Bad Habit | Judson Brewer | TED",
-      "bleu_score": 43.3
+      "bleu_score": 43.3,
+      "chrf_score": 74.74,
+      "ter_score": 46.37
     },
     {
       "id": "5MuIMqhT8DM",
       "title": "Sleep Is Your Superpower | Matt Walker | TED",
-      "bleu_score": 25.38
+      "bleu_score": 25.38,
+      "chrf_score": 65.42,
+      "ter_score": 69.47
     },
     {
       "id": "PY9DcIMGxMs",
       "title": "Everything you think you know about addiction is wrong | Johann Hari | TED",
-      "bleu_score": 30.39
+      "bleu_score": 30.39,
+      "chrf_score": 69.0,
+      "ter_score": 73.38
     },
     {
       "id": "BHY0FxzoKZE",
       "title": "Wendy Suzuki: The brain-changing benefits of exercise | TED",
-      "bleu_score": 26.92
+      "bleu_score": 26.92,
+      "chrf_score": 65.63,
+      "ter_score": 62.79
     },
     {
       "id": "6Af6b_wyiwI",
       "title": "The next outbreak? We\u2019re not ready | Bill Gates | TED",
-      "bleu_score": 25.08
+      "bleu_score": 25.08,
+      "chrf_score": 62.69,
+      "ter_score": 71.53
     },
     {
       "id": "P6FORpg0KVo",
       "title": "How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED",
-      "bleu_score": 44.65
+      "bleu_score": 44.65,
+      "chrf_score": 75.12,
+      "ter_score": 56.52
     },
     {
       "id": "4TMPXK9tw5U",
       "title": "The Battle for Your Time: Exposing the Costs of Social Media | Dino Ambrosi | TEDxLagunaBlancaSchool",
-      "bleu_score": 39.65
+      "bleu_score": 39.65,
+      "chrf_score": 71.56,
+      "ter_score": 65.02
     },
     {
       "id": "LBvHI1awWaI",
       "title": "Why comfort will ruin your life | Bill Eckstrom | TEDxUniversityofNevada",
-      "bleu_score": 24.83
+      "bleu_score": 24.83,
+      "chrf_score": 64.03,
+      "ter_score": 82.02
     },
     {
       "id": "LnJwH_PZXnM",
       "title": "How not to take things personally? | Frederik Imbo | TEDxMechelen",
-      "bleu_score": 42.9
+      "bleu_score": 42.9,
+      "chrf_score": 73.27,
+      "ter_score": 47.32
     },
     {
       "id": "MdZAMSyn_As",
       "title": "The Skill of Humor | Andrew Tarvin | TEDxTAMU",
-      "bleu_score": 35.7
+      "bleu_score": 35.7,
+      "chrf_score": 69.12,
+      "ter_score": 70.86
     }
   ],
   "mbart": [
     {
       "id": "-moW9jvvMr4",
       "title": "A Simple Way to Break a Bad Habit | Judson Brewer | TED",
-      "bleu_score": 19.37
+      "bleu_score": 19.37,
+      "chrf_score": 59.55,
+      "ter_score": 154.59
     },
     {
       "id": "5MuIMqhT8DM",
       "title": "Sleep Is Your Superpower | Matt Walker | TED",
-      "bleu_score": 15.33
+      "bleu_score": 15.33,
+      "chrf_score": 58.87,
+      "ter_score": 145.45
     },
     {
       "id": "PY9DcIMGxMs",
       "title": "Everything you think you know about addiction is wrong | Johann Hari | TED",
-      "bleu_score": 17.78
+      "bleu_score": 17.78,
+      "chrf_score": 61.24,
+      "ter_score": 134.94
     },
     {
       "id": "BHY0FxzoKZE",
       "title": "Wendy Suzuki: The brain-changing benefits of exercise | TED",
-      "bleu_score": 10.07
+      "bleu_score": 10.07,
+      "chrf_score": 51.04,
+      "ter_score": 222.75
     },
     {
       "id": "6Af6b_wyiwI",
       "title": "The next outbreak? We\u2019re not ready | Bill Gates | TED",
-      "bleu_score": 11.48
+      "bleu_score": 11.48,
+      "chrf_score": 52.62,
+      "ter_score": 165.81
     },
     {
       "id": "P6FORpg0KVo",
       "title": "How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED",
-      "bleu_score": 22.25
+      "bleu_score": 22.25,
+      "chrf_score": 63.09,
+      "ter_score": 145.93
     },
     {
       "id": "4TMPXK9tw5U",
       "title": "The Battle for Your Time: Exposing the Costs of Social Media | Dino Ambrosi | TEDxLagunaBlancaSchool",
-      "bleu_score": 21.16
+      "bleu_score": 21.16,
+      "chrf_score": 60.36,
+      "ter_score": 136.83
     },
     {
       "id": "LBvHI1awWaI",
       "title": "Why comfort will ruin your life | Bill Eckstrom | TEDxUniversityofNevada",
-      "bleu_score": 13.17
+      "bleu_score": 13.17,
+      "chrf_score": 53.89,
+      "ter_score": 154.78
     },
     {
       "id": "LnJwH_PZXnM",
       "title": "How not to take things personally? | Frederik Imbo | TEDxMechelen",
-      "bleu_score": 13.66
+      "bleu_score": 13.66,
+      "chrf_score": 52.95,
+      "ter_score": 201.09
     },
     {
       "id": "MdZAMSyn_As",
       "title": "The Skill of Humor | Andrew Tarvin | TEDxTAMU",
-      "bleu_score": 20.49
+      "bleu_score": 20.49,
+      "chrf_score": 60.68,
+      "ter_score": 124.74
     }
   ],
   "nllb": [
     {
       "id": "-moW9jvvMr4",
       "title": "A Simple Way to Break a Bad Habit | Judson Brewer | TED",
-      "bleu_score": 42.37
+      "bleu_score": 42.37,
+      "chrf_score": 73.63,
+      "ter_score": 46.92
     },
     {
       "id": "5MuIMqhT8DM",
       "title": "Sleep Is Your Superpower | Matt Walker | TED",
-      "bleu_score": 27.0
+      "bleu_score": 27.0,
+      "chrf_score": 65.54,
+      "ter_score": 68.79
     },
     {
       "id": "PY9DcIMGxMs",
       "title": "Everything you think you know about addiction is wrong | Johann Hari | TED",
-      "bleu_score": 30.84
+      "bleu_score": 30.84,
+      "chrf_score": 69.66,
+      "ter_score": 83.02
     },
     {
       "id": "BHY0FxzoKZE",
       "title": "Wendy Suzuki: The brain-changing benefits of exercise | TED",
-      "bleu_score": 28.88
+      "bleu_score": 28.88,
+      "chrf_score": 66.03,
+      "ter_score": 61.35
     },
     {
       "id": "6Af6b_wyiwI",
       "title": "The next outbreak? We\u2019re not ready | Bill Gates | TED",
-      "bleu_score": 27.26
+      "bleu_score": 27.26,
+      "chrf_score": 63.52,
+      "ter_score": 69.22
     },
     {
       "id": "P6FORpg0KVo",
       "title": "How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED",
-      "bleu_score": 45.9
+      "bleu_score": 45.9,
+      "chrf_score": 75.76,
+      "ter_score": 51.15
     },
     {
       "id": "4TMPXK9tw5U",
       "title": "The Battle for Your Time: Exposing the Costs of Social Media | Dino Ambrosi | TEDxLagunaBlancaSchool",
-      "bleu_score": 42.46
+      "bleu_score": 42.46,
+      "chrf_score": 71.84,
+      "ter_score": 49.92
     },
     {
       "id": "LBvHI1awWaI",
       "title": "Why comfort will ruin your life | Bill Eckstrom | TEDxUniversityofNevada",
-      "bleu_score": 26.63
+      "bleu_score": 26.63,
+      "chrf_score": 64.84,
+      "ter_score": 70.23
     },
     {
       "id": "LnJwH_PZXnM",
       "title": "How not to take things personally? | Frederik Imbo | TEDxMechelen",
-      "bleu_score": 39.27
+      "bleu_score": 39.27,
+      "chrf_score": 69.56,
+      "ter_score": 54.82
     },
     {
       "id": "MdZAMSyn_As",
       "title": "The Skill of Humor | Andrew Tarvin | TEDxTAMU",
-      "bleu_score": 35.96
+      "bleu_score": 35.96,
+      "chrf_score": 68.84,
+      "ter_score": 65.07
     }
   ]
 }

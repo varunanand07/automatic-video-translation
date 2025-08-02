@@ -3,51 +3,69 @@
     {
       "id": "ErpdSOfPa-Q",
       "title": "DON'T MAKE THESE MISTAKES IN LONDON \u274c\ud83d\ude2d",
-      "bleu_score": 53.73
+      "bleu_score": 53.73,
+      "chrf_score": 72.94,
+      "ter_score": 38.79
     },
     {
       "id": "aV_JLvSj550",
       "title": "Katz\u2019s Deli Review\u2026after a few",
-      "bleu_score": 58.4
+      "bleu_score": 58.4,
+      "chrf_score": 69.8,
+      "ter_score": 58.74
     },
     {
       "id": "MTkQA9aHJHk",
       "title": "I had to \ud83d\ude02\ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17",
-      "bleu_score": 17.04
+      "bleu_score": 17.04,
+      "chrf_score": 49.12,
+      "ter_score": 37.04
     }
   ],
   "mbart": [
     {
       "id": "ErpdSOfPa-Q",
       "title": "DON'T MAKE THESE MISTAKES IN LONDON \u274c\ud83d\ude2d",
-      "bleu_score": 26.99
+      "bleu_score": 26.99,
+      "chrf_score": 56.13,
+      "ter_score": 68.97
     },
     {
       "id": "aV_JLvSj550",
       "title": "Katz\u2019s Deli Review\u2026after a few",
-      "bleu_score": 10.0
+      "bleu_score": 10.0,
+      "chrf_score": 40.16,
+      "ter_score": 297.9
     },
     {
       "id": "MTkQA9aHJHk",
       "title": "I had to \ud83d\ude02\ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17",
-      "bleu_score": 10.05
+      "bleu_score": 10.05,
+      "chrf_score": 41.73,
+      "ter_score": 55.56
     }
   ],
   "nllb": [
     {
       "id": "ErpdSOfPa-Q",
       "title": "DON'T MAKE THESE MISTAKES IN LONDON \u274c\ud83d\ude2d",
-      "bleu_score": 50.72
+      "bleu_score": 50.72,
+      "chrf_score": 68.21,
+      "ter_score": 43.1
     },
     {
       "id": "aV_JLvSj550",
       "title": "Katz\u2019s Deli Review\u2026after a few",
-      "bleu_score": 50.82
+      "bleu_score": 50.82,
+      "chrf_score": 66.17,
+      "ter_score": 74.13
     },
     {
       "id": "MTkQA9aHJHk",
       "title": "I had to \ud83d\ude02\ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17",
-      "bleu_score": 0.98
+      "bleu_score": 0.98,
+      "chrf_score": 11.71,
+      "ter_score": 96.3
     }
   ]
 }
