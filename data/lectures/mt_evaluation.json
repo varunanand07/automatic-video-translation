@@ -3,90 +3,90 @@
     {
       "id": "dxxEJbxuJOE",
       "title": "Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet",
-      "bleu_score": 68.49,
-      "chrf_score": 83.7,
-      "ter_score": 31.78
+      "bleu_score": 34.62,
+      "chrf_score": 68.77,
+      "ter_score": 85.71
     },
     {
       "id": "Ps8jOj7diA0",
       "title": "Lecture 1 | Programming Paradigms (Stanford)",
-      "bleu_score": 65.28,
-      "chrf_score": 82.49,
-      "ter_score": 46.17
+      "bleu_score": 51.32,
+      "chrf_score": 76.97,
+      "ter_score": 38.83
     },
     {
       "id": "1Pzk-UqilW4",
       "title": "Lecture 4.1: Inheritance and Genetics  \u2014 Genes to Proteins",
-      "bleu_score": 66.46,
-      "chrf_score": 82.71,
-      "ter_score": 31.98
+      "bleu_score": 29.62,
+      "chrf_score": 64.93,
+      "ter_score": 93.94
     },
     {
       "id": "oKtWYe9DxDo",
       "title": "Pandemic Lectures: Gathering the Facts | London Business School",
-      "bleu_score": 68.96,
-      "chrf_score": 83.78,
-      "ter_score": 30.57
-    }
-  ],
-  "mbart": [
-    {
-      "id": "dxxEJbxuJOE",
-      "title": "Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet",
-      "bleu_score": 44.72,
-      "chrf_score": 74.33,
-      "ter_score": 88.74
-    },
-    {
-      "id": "Ps8jOj7diA0",
-      "title": "Lecture 1 | Programming Paradigms (Stanford)",
-      "bleu_score": 40.59,
-      "chrf_score": 71.06,
-      "ter_score": 108.93
-    },
-    {
-      "id": "1Pzk-UqilW4",
-      "title": "Lecture 4.1: Inheritance and Genetics  \u2014 Genes to Proteins",
-      "bleu_score": 39.39,
-      "chrf_score": 71.7,
-      "ter_score": 82.72
-    },
-    {
-      "id": "oKtWYe9DxDo",
-      "title": "Pandemic Lectures: Gathering the Facts | London Business School",
-      "bleu_score": 29.85,
-      "chrf_score": 65.28,
-      "ter_score": 146.18
+      "bleu_score": 6.32,
+      "chrf_score": 45.44,
+      "ter_score": 111.14
     }
   ],
   "nllb": [
     {
       "id": "dxxEJbxuJOE",
       "title": "Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet",
-      "bleu_score": 68.84,
-      "chrf_score": 82.74,
-      "ter_score": 31.78
+      "bleu_score": 35.48,
+      "chrf_score": 68.29,
+      "ter_score": 82.4
     },
     {
       "id": "Ps8jOj7diA0",
       "title": "Lecture 1 | Programming Paradigms (Stanford)",
-      "bleu_score": 62.66,
-      "chrf_score": 80.58,
-      "ter_score": 57.51
+      "bleu_score": 48.97,
+      "chrf_score": 75.77,
+      "ter_score": 46.2
     },
     {
       "id": "1Pzk-UqilW4",
       "title": "Lecture 4.1: Inheritance and Genetics  \u2014 Genes to Proteins",
-      "bleu_score": 67.26,
-      "chrf_score": 81.45,
-      "ter_score": 42.1
+      "bleu_score": 29.28,
+      "chrf_score": 64.61,
+      "ter_score": 90.23
     },
     {
       "id": "oKtWYe9DxDo",
       "title": "Pandemic Lectures: Gathering the Facts | London Business School",
-      "bleu_score": 68.22,
-      "chrf_score": 83.1,
-      "ter_score": 31.46
+      "bleu_score": 6.35,
+      "chrf_score": 45.58,
+      "ter_score": 109.64
+    }
+  ],
+  "mbart": [
+    {
+      "id": "dxxEJbxuJOE",
+      "title": "Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet",
+      "bleu_score": 23.95,
+      "chrf_score": 63.8,
+      "ter_score": 90.95
+    },
+    {
+      "id": "Ps8jOj7diA0",
+      "title": "Lecture 1 | Programming Paradigms (Stanford)",
+      "bleu_score": 34.28,
+      "chrf_score": 67.6,
+      "ter_score": 100.8
+    },
+    {
+      "id": "1Pzk-UqilW4",
+      "title": "Lecture 4.1: Inheritance and Genetics  \u2014 Genes to Proteins",
+      "bleu_score": 19.97,
+      "chrf_score": 60.04,
+      "ter_score": 117.35
+    },
+    {
+      "id": "oKtWYe9DxDo",
+      "title": "Pandemic Lectures: Gathering the Facts | London Business School",
+      "bleu_score": 3.41,
+      "chrf_score": 39.8,
+      "ter_score": 181.69
     }
   ]
 }

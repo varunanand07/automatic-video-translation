@@ -1,0 +1,61 @@
+dataset,model,id,title,BLEU,chrF,TER,WER
+ted_talks,marian,-moW9jvvMr4,A Simple Way to Break a Bad Habit | Judson Brewer | TED,43.3,74.74,46.37,0.161
+ted_talks,marian,5MuIMqhT8DM,Sleep Is Your Superpower | Matt Walker | TED,25.38,65.42,69.47,0.154
+ted_talks,marian,PY9DcIMGxMs,Everything you think you know about addiction is wrong | Johann Hari | TED,30.39,69.0,73.38,0.216
+ted_talks,marian,BHY0FxzoKZE,Wendy Suzuki: The brain-changing benefits of exercise | TED,26.92,65.63,62.79,0.214
+ted_talks,marian,6Af6b_wyiwI,The next outbreak? We’re not ready | Bill Gates | TED,25.08,62.69,71.53,0.236
+ted_talks,marian,P6FORpg0KVo,How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED,44.65,75.12,56.52,0.178
+ted_talks,marian,4TMPXK9tw5U,The Battle for Your Time: Exposing the Costs of Social Media | Dino Ambrosi | TEDxLagunaBlancaSchool,39.65,71.56,65.02,0.132
+ted_talks,marian,LBvHI1awWaI,Why comfort will ruin your life | Bill Eckstrom | TEDxUniversityofNevada,24.83,64.03,82.02,0.235
+ted_talks,marian,LnJwH_PZXnM,How not to take things personally? | Frederik Imbo | TEDxMechelen,42.9,73.27,47.32,0.259
+ted_talks,marian,MdZAMSyn_As,The Skill of Humor | Andrew Tarvin | TEDxTAMU,35.7,69.12,70.86,0.307
+ted_talks,nllb,-moW9jvvMr4,A Simple Way to Break a Bad Habit | Judson Brewer | TED,42.37,73.63,46.92,0.161
+ted_talks,nllb,5MuIMqhT8DM,Sleep Is Your Superpower | Matt Walker | TED,27.0,65.54,68.79,0.154
+ted_talks,nllb,PY9DcIMGxMs,Everything you think you know about addiction is wrong | Johann Hari | TED,30.84,69.66,83.02,0.216
+ted_talks,nllb,BHY0FxzoKZE,Wendy Suzuki: The brain-changing benefits of exercise | TED,28.88,66.03,61.35,0.214
+ted_talks,nllb,6Af6b_wyiwI,The next outbreak? We’re not ready | Bill Gates | TED,27.26,63.52,69.22,0.236
+ted_talks,nllb,P6FORpg0KVo,How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED,45.9,75.76,51.15,0.178
+ted_talks,nllb,4TMPXK9tw5U,The Battle for Your Time: Exposing the Costs of Social Media | Dino Ambrosi | TEDxLagunaBlancaSchool,42.46,71.84,49.92,0.132
+ted_talks,nllb,LBvHI1awWaI,Why comfort will ruin your life | Bill Eckstrom | TEDxUniversityofNevada,26.63,64.84,70.23,0.235
+ted_talks,nllb,LnJwH_PZXnM,How not to take things personally? | Frederik Imbo | TEDxMechelen,39.27,69.56,54.82,0.259
+ted_talks,nllb,MdZAMSyn_As,The Skill of Humor | Andrew Tarvin | TEDxTAMU,35.96,68.84,65.07,0.307
+ted_talks,mbart,-moW9jvvMr4,A Simple Way to Break a Bad Habit | Judson Brewer | TED,19.37,59.55,154.59,0.161
+ted_talks,mbart,5MuIMqhT8DM,Sleep Is Your Superpower | Matt Walker | TED,15.33,58.87,145.45,0.154
+ted_talks,mbart,PY9DcIMGxMs,Everything you think you know about addiction is wrong | Johann Hari | TED,17.78,61.24,134.94,0.216
+ted_talks,mbart,BHY0FxzoKZE,Wendy Suzuki: The brain-changing benefits of exercise | TED,10.07,51.04,222.75,0.214
+ted_talks,mbart,6Af6b_wyiwI,The next outbreak? We’re not ready | Bill Gates | TED,11.48,52.62,165.81,0.236
+ted_talks,mbart,P6FORpg0KVo,How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED,22.25,63.09,145.93,0.178
+ted_talks,mbart,4TMPXK9tw5U,The Battle for Your Time: Exposing the Costs of Social Media | Dino Ambrosi | TEDxLagunaBlancaSchool,21.16,60.36,136.83,0.132
+ted_talks,mbart,LBvHI1awWaI,Why comfort will ruin your life | Bill Eckstrom | TEDxUniversityofNevada,13.17,53.89,154.78,0.235
+ted_talks,mbart,LnJwH_PZXnM,How not to take things personally? | Frederik Imbo | TEDxMechelen,13.66,52.95,201.09,0.259
+ted_talks,mbart,MdZAMSyn_As,The Skill of Humor | Andrew Tarvin | TEDxTAMU,20.49,60.68,124.74,0.307
+lectures,marian,dxxEJbxuJOE,Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet,34.62,68.77,85.71,0.211
+lectures,marian,Ps8jOj7diA0,Lecture 1 | Programming Paradigms (Stanford),51.32,76.97,38.83,0.278
+lectures,marian,1Pzk-UqilW4,Lecture 4.1: Inheritance and Genetics  — Genes to Proteins,29.62,64.93,93.94,0.237
+lectures,marian,oKtWYe9DxDo,Pandemic Lectures: Gathering the Facts | London Business School,6.32,45.44,111.14,0.885
+lectures,nllb,dxxEJbxuJOE,Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet,35.48,68.29,82.4,0.211
+lectures,nllb,Ps8jOj7diA0,Lecture 1 | Programming Paradigms (Stanford),48.97,75.77,46.2,0.278
+lectures,nllb,1Pzk-UqilW4,Lecture 4.1: Inheritance and Genetics  — Genes to Proteins,29.28,64.61,90.23,0.237
+lectures,nllb,oKtWYe9DxDo,Pandemic Lectures: Gathering the Facts | London Business School,6.35,45.58,109.64,0.885
+lectures,mbart,dxxEJbxuJOE,Stanford CS105: Intro to Computers | 2021 | Lecture 6.2 Network Protocols: Protocols of the Internet,23.95,63.8,90.95,0.211
+lectures,mbart,Ps8jOj7diA0,Lecture 1 | Programming Paradigms (Stanford),34.28,67.6,100.8,0.278
+lectures,mbart,1Pzk-UqilW4,Lecture 4.1: Inheritance and Genetics  — Genes to Proteins,19.97,60.04,117.35,0.237
+lectures,mbart,oKtWYe9DxDo,Pandemic Lectures: Gathering the Facts | London Business School,3.41,39.8,181.69,0.885
+podcasts,marian,oS9ajaVNqkw,The Music Industry’s Engine Behind #1 Hits - Rick Beato,52.7,76.45,36.99,0.284
+podcasts,marian,Q4xQdgcxGns,"The Northern Lights - what are they? - What in the World podcast, BBC World Service",54.12,77.94,37.04,0.208
+podcasts,marian,5vK8LEgznBQ,Superheros | The Always Sunny Podcast Clips,17.85,51.92,86.48,0.497
+podcasts,nllb,oS9ajaVNqkw,The Music Industry’s Engine Behind #1 Hits - Rick Beato,51.21,75.67,49.19,0.284
+podcasts,nllb,Q4xQdgcxGns,"The Northern Lights - what are they? - What in the World podcast, BBC World Service",55.06,77.41,51.3,0.208
+podcasts,nllb,5vK8LEgznBQ,Superheros | The Always Sunny Podcast Clips,15.63,50.44,98.09,0.497
+podcasts,mbart,oS9ajaVNqkw,The Music Industry’s Engine Behind #1 Hits - Rick Beato,23.83,62.51,131.9,0.284
+podcasts,mbart,Q4xQdgcxGns,"The Northern Lights - what are they? - What in the World podcast, BBC World Service",24.36,62.85,154.06,0.208
+podcasts,mbart,5vK8LEgznBQ,Superheros | The Always Sunny Podcast Clips,4.47,35.68,295.77,0.497
+youtube_shorts,marian,ErpdSOfPa-Q,DON'T MAKE THESE MISTAKES IN LONDON ❌😭,21.68,60.47,119.72,0.31
+youtube_shorts,marian,aV_JLvSj550,Katz’s Deli Review…after a few,9.62,42.38,195.89,1.009
+youtube_shorts,marian,MTkQA9aHJHk,I had to 😂🤷🏼‍♂️#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17,1.65,14.45,96.55,1.0
+youtube_shorts,nllb,ErpdSOfPa-Q,DON'T MAKE THESE MISTAKES IN LONDON ❌😭,18.73,57.89,112.68,0.31
+youtube_shorts,nllb,aV_JLvSj550,Katz’s Deli Review…after a few,9.62,43.54,213.7,1.009
+youtube_shorts,nllb,MTkQA9aHJHk,I had to 😂🤷🏼‍♂️#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17,0.74,10.11,89.66,1.0
+youtube_shorts,mbart,ErpdSOfPa-Q,DON'T MAKE THESE MISTAKES IN LONDON ❌😭,14.23,51.97,142.25,0.31
+youtube_shorts,mbart,aV_JLvSj550,Katz’s Deli Review…after a few,2.56,21.86,638.36,1.009
+youtube_shorts,mbart,MTkQA9aHJHk,I had to 😂🤷🏼‍♂️#GB4 #F4 #F1 #Leclerc #RacingDriver #RaceCar #OultonPark #DanHickey #DH17,1.65,14.6,96.55,1.0
