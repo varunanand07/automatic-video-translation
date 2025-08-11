@@ -23,6 +23,7 @@ except Exception:
 
 DATASETS = ["ted_talks", "lectures", "podcasts", "youtube_shorts"]
 BASE = "data"
+ANALYSIS_DIR = "analysis"
 
 
 def _read_json(path: str):
@@ -102,11 +103,13 @@ def pearson_r_and_p(x: np.ndarray, y: np.ndarray) -> Tuple[Optional[float], Opti
 
 def main():
     all_rows: List[dict] = []
+    os.makedirs(ANALYSIS_DIR, exist_ok=True)
     for ds in DATASETS:
         all_rows.extend(load_mt_rows(ds))
 
     df = pd.DataFrame(all_rows)
-    df.to_csv("all_metrics_flat.csv", index=False)
+    flat_path = os.path.join(ANALYSIS_DIR, "all_metrics_flat.csv")
+    df.to_csv(flat_path, index=False)
 
     summaries = []
     for (ds, model), grp in df.groupby(["dataset", "model"], dropna=False):
@@ -129,7 +132,8 @@ def main():
                 "ci95_hi": round(ci_hi, 2) if n > 1 else None,
                 "n": n
             })
-    pd.DataFrame(summaries).to_csv("summary_by_ds_model.csv", index=False)
+    summary_path = os.path.join(ANALYSIS_DIR, "summary_by_ds_model.csv")
+    pd.DataFrame(summaries).to_csv(summary_path, index=False)
 
     corr_rows = []
     for (ds, model), grp in df.groupby(["dataset", "model"], dropna=False):
@@ -147,7 +151,8 @@ def main():
             "p": None if p is None else float(p),
             "n": n
         })
-    pd.DataFrame(corr_rows).to_csv("correlations_WER_BLEU.csv", index=False)
+    corr_path = os.path.join(ANALYSIS_DIR, "correlations_WER_BLEU.csv")
+    pd.DataFrame(corr_rows).to_csv(corr_path, index=False)
 
     try:
         if sm is not None and ols is not None and anova_lm is not None:
@@ -155,15 +160,18 @@ def main():
             df_anova["BLEU"] = df_anova["BLEU"].astype(float)
             model = ols('BLEU ~ C(model) + C(dataset) + C(model):C(dataset)', data=df_anova).fit()
             anova_table = anova_lm(model, typ=2)
-            anova_table.to_csv("anova_model_x_dataset_bleu.csv")
+            anova_path = os.path.join(ANALYSIS_DIR, "anova_model_x_dataset_bleu.csv")
+            anova_table.to_csv(anova_path)
         else:
+            anova_path = os.path.join(ANALYSIS_DIR, "anova_model_x_dataset_bleu.csv")
             pd.DataFrame({
                 "note": ["statsmodels not installed"]
-            }).to_csv("anova_model_x_dataset_bleu.csv", index=False)
+            }).to_csv(anova_path, index=False)
     except Exception as e:
+        anova_path = os.path.join(ANALYSIS_DIR, "anova_model_x_dataset_bleu.csv")
         pd.DataFrame({
             "note": [f"ANOVA failed: {e}"]
-        }).to_csv("anova_model_x_dataset_bleu.csv", index=False)
+        }).to_csv(anova_path, index=False)
 
     print("All csv files saved to analysis/")
 
