@@ -76,13 +76,6 @@ Use the already-included data and metrics to regenerate aggregate CSVs and plots
 # 1) Aggregate all datasets → CSVs
 python scripts/analyze_results.py
 
-# The analyze script writes CSVs to the project root. Ensure copies exist in analysis/ for plotting:
-mkdir -p analysis
-cp -f all_metrics_flat.csv analysis/
-cp -f summary_by_ds_model.csv analysis/
-cp -f correlations_WER_BLEU.csv analysis/
-cp -f anova_model_x_dataset_bleu.csv analysis/
-
 # 2) Create all figures
 python scripts/visualize.py --asr-model whisper
 ```
@@ -116,7 +109,7 @@ Audio and many transcripts are already present. To re-generate ASR transcripts:
 # Whisper (default)
 python scripts/transcribe_audio.py --dataset ted_talks --model whisper
 
-# AssemblyAI (requires ASSEMBLYAI_API_KEY)
+# AssemblyAI (requires an AssemblyAI API key (Assembly_AI_API_KEY))
 python scripts/transcribe_audio.py --dataset ted_talks --model assemblyai
 ```
 Outputs go to `data/<dataset>/asr_transcripts/<model>/*.txt`.
