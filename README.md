@@ -1,6 +1,6 @@
 ## Automatic Video Transcription
 
-This repository contains a fully reproducible pipeline to:
+This repository contains a pipeline to:
 
 - Collect or use provided English transcripts for YouTube videos
 - Generate ASR transcripts (Whisper or AssemblyAI)
@@ -39,11 +39,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Notes:
-- Torch will use CPU by default, GPU is optional.
-- First execution of translation scripts will download model weights (Marian, mBART, NLLB) to the local Hugging Face cache.
-
-### Optional: AssemblyAI
+### Notes: AssemblyAI
 To use AssemblyAI for ASR you will need an API key:
 ```bash
 export ASSEMBLYAI_API_KEY=api_key
@@ -63,32 +59,13 @@ export ASSEMBLYAI_API_KEY=api_key
   - `mt_evaluation.json`: MT metrics per MT system
   - `mt_evaluation_summary.json`: Dataset-level summary
 
-- `scripts/`: All pipeline scripts (CLI usage below)
+- `scripts/`: All scripts (CLI usage below)
 - `analysis/`: Aggregated CSVs (for visualization)
 - `visualizations/`: Saved figures
 
 
-## 3) One-command verification
 
-Use the already-included data and metrics to regenerate aggregate CSVs and plots.
-
-```bash
-# 1) Aggregate all datasets → CSVs
-python scripts/analyze_results.py
-
-# 2) Create all figures
-python scripts/visualize.py --asr-model whisper
-```
-
-You should now see PNGs in `visualizations/`:
-- `bleu_by_model_dataset.png`
-- `scatter_WER_BLEU_<dataset>.png` for all datasets
-- `metric_correlations.png`
-
-Compare these to the images in `visualizations/` to verify consistency.
-
-
-## 4) Full pipeline verification
+## 3) Full pipeline verification
 
 Below are commands to re-generate each component. You do not need to run them all to verify; use them selectively to validate any part.
 
@@ -161,7 +138,7 @@ python scripts/visualize.py --asr-model whisper
 ```
 
 
-## 5) Script reference
+## 4) Script reference
 
 ### scripts/transcribe_audio.py
 - **args**: `--dataset {ted_talks|lectures|podcasts|youtube_shorts}`, `--model {whisper|assemblyai}`
@@ -206,18 +183,6 @@ python scripts/visualize.py --asr-model whisper
 ### scripts/clean_transcripts.py (optional)
 - De-duplicates lines, strips bracketed non-speech, lowers text in `original_transcripts/` for all datasets.
 
-## 6) Troubleshooting
 
-- **ffmpeg not found**: Install ffmpeg (`brew install ffmpeg` or `apt-get install -y ffmpeg`).
-- **Model download errors**: Ensure internet access; retry. Hugging Face caches in `~/.cache/huggingface`.
-- **YouTube rate limits (HTTP 429)**: The crawl scripts back off automatically; consider rerunning later.
-- **visualize.py cannot find CSVs**: The aggregator writes CSVs to the project root. Copy them to `analysis/` as shown above.
-- **AssemblyAI 401**: Ensure `ASSEMBLYAI_API_KEY` is set.
-- **Torch GPU**: If no GPU is available, scripts run on CPU by default.
-
-
-## 7) License and citation
-
-This repository is for research and evaluation. YouTube content belongs to the original creators. Models are from their respective providers (OpenAI Whisper, Helsinki-NLP, Meta, etc.) under their licenses.
 
 
