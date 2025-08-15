@@ -83,10 +83,10 @@ Notes:
 ### B) Transcribe audio with ASR (Whisper or AssemblyAI)
 Audio and many transcripts are already present. To re-generate ASR transcripts:
 ```bash
-# Whisper (default)
+
 python scripts/transcribe_audio.py --dataset ted_talks --model whisper
 
-# AssemblyAI (requires an AssemblyAI API key (Assembly_AI_API_KEY))
+# AssemblyAI (you would require an API key)
 python scripts/transcribe_audio.py --dataset ted_talks --model assemblyai
 ```
 Outputs go to `data/<dataset>/asr_transcripts/<model>/*.txt`.
@@ -101,17 +101,17 @@ Outputs go to `data/<dataset>/translations/<mt-model>/*_es.txt`.
 
 ### D) Evaluate ASR (WER)
 ```bash
-# Evaluate WER for Whisper outputs
+# Evaluate WER
 python scripts/evaluate_asr.py --dataset ted_talks --model whisper
 
-# Evaluate WER for AssemblyAI outputs (if present)
+# Evaluate WER for AssemblyAI
 python scripts/evaluate_asr.py --dataset ted_talks --model assemblyai
 ```
 Output: `data/<dataset>/asr_evaluation.json` (merged across ASR systems).
 
 ### E) Evaluate MT (BLEU, chrF, TER)
 ```bash
-# Evaluate all MT systems found under translations/
+# Evaluate all MT systems
 python scripts/evaluate_mt.py --dataset ted_talks
 
 # Or just one system
@@ -126,7 +126,7 @@ Outputs:
 # Aggregate all datasets into CSVs
 python scripts/analyze_results.py
 
-# Ensure analysis/ contains the latest CSVs for plotting
+# Make sure analysis/ contains the latest CSVs for plotting
 mkdir -p analysis
 cp -f all_metrics_flat.csv analysis/
 cp -f summary_by_ds_model.csv analysis/
